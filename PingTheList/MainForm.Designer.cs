@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnClearStatus = new System.Windows.Forms.Button();
             this.btnPing = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tbIps = new System.Windows.Forms.RichTextBox();
             this.tbStatus = new System.Windows.Forms.RichTextBox();
-            this.btnClearStatus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -60,6 +60,20 @@
             this.splitContainer1.Size = new System.Drawing.Size(706, 421);
             this.splitContainer1.SplitterDistance = 222;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // btnClearStatus
+            // 
+            this.btnClearStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearStatus.Location = new System.Drawing.Point(1, 390);
+            this.btnClearStatus.Name = "btnClearStatus";
+            this.btnClearStatus.Size = new System.Drawing.Size(220, 32);
+            this.btnClearStatus.TabIndex = 3;
+            this.btnClearStatus.Text = "&Clear output";
+            this.btnClearStatus.UseVisualStyleBackColor = true;
+            this.btnClearStatus.Click += new System.EventHandler(this.btnClearStatus_Click);
             // 
             // btnPing
             // 
@@ -113,20 +127,6 @@
             this.tbStatus.TabIndex = 1;
             this.tbStatus.Text = "";
             // 
-            // btnClearStatus
-            // 
-            this.btnClearStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearStatus.Location = new System.Drawing.Point(1, 390);
-            this.btnClearStatus.Name = "btnClearStatus";
-            this.btnClearStatus.Size = new System.Drawing.Size(220, 32);
-            this.btnClearStatus.TabIndex = 3;
-            this.btnClearStatus.Text = "&Clear output";
-            this.btnClearStatus.UseVisualStyleBackColor = true;
-            this.btnClearStatus.Click += new System.EventHandler(this.btnClearStatus_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -135,6 +135,7 @@
             this.ClientSize = new System.Drawing.Size(706, 421);
             this.Controls.Add(this.splitContainer1);
             this.ForeColor = System.Drawing.Color.Lime;
+            this.Icon = global::PingTheList.Properties.Resources.if_ping_395375;
             this.Name = "MainForm";
             this.Text = "Ping The List";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
