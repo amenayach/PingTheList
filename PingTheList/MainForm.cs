@@ -57,6 +57,15 @@ namespace PingTheList
             {
                 MessageBox.Show(exception.Message);
             }
+            finally
+            {
+                tbStatus.AppendText($"Done{Environment.NewLine}");
+            }
+        }
+
+        private void btnClearStatus_Click(object sender, EventArgs e)
+        {
+            tbStatus.Clear();
         }
     }
 }
