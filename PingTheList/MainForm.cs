@@ -34,6 +34,7 @@ namespace PingTheList
 
             try
             {
+                tbStatus.AppendText($"{Environment.NewLine}------------------------ {DateTime.Now:yyyy:MM:dd HH:mm:ss.ffffff} ------------------------{Environment.NewLine}");
                 using (var pingSender = new Ping())
                 {
                     foreach (var ip in ips)
@@ -59,7 +60,7 @@ namespace PingTheList
             }
             finally
             {
-                tbStatus.AppendText($"Done{Environment.NewLine}");
+                tbStatus.AppendText($"------------------------------------------ Done ------------------------------------------{Environment.NewLine}");
             }
         }
 
